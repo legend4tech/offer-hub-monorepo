@@ -14,8 +14,6 @@ const iconMap = {
 
 export function FeatureCard({
   title,
-  ShieldCheck,
-  Link2,
   description,
   iconName,
   large = false,
@@ -25,7 +23,7 @@ export function FeatureCard({
   iconName: keyof typeof iconMap;
   large?: boolean;
 }) {
-  const Icon = iconMap[iconName] || ShieldCheck;
+  const Icon = iconMap[iconName] || iconMap.ShieldCheck;
   return (
     <div
       className={`${
