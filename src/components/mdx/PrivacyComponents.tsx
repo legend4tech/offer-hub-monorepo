@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Mail, Cookie, ShieldCheck, Link2 } from "lucide-react";
 import { DataRightsForm } from "./DataRightsForm";
@@ -12,6 +14,8 @@ const iconMap = {
 
 export function FeatureCard({
   title,
+  ShieldCheck,
+  Link2,
   description,
   iconName,
   large = false,
